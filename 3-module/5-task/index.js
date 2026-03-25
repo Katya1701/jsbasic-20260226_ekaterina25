@@ -1,3 +1,11 @@
 function getMinMax(str) {
-  // ваш код...
+
+  const nums = str.split(' ')
+      .map(Number)
+      .filter(n => !isNaN(n))
+
+      return {
+        min: Math.min(...nums),
+        max: Math.max(...nums),
+      }
 }
